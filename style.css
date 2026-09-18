@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     background-color: #f5f5f5;
     color: #222;
@@ -91,7 +91,7 @@ body {
 
     color: white;
 
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
 
     outline: none;
@@ -221,7 +221,7 @@ main {
     padding: 10px 20px;
     margin: 0;
 
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 600;
 
@@ -336,7 +336,10 @@ main {
 
 .society-content h3 {
     margin: 0;
+    font-family: "DM Sans", sans-serif;
     font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
 }
 
 
@@ -455,7 +458,7 @@ form textarea {
     border-radius: 7px;
 
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
 
     transition:
         background-color 0.3s ease,
@@ -965,4 +968,286 @@ body.dark main > button:hover,
 body.dark main button:not(form button):hover {
     background: #292929 !important;
     box-shadow: 0 3px 7px rgba(255, 255, 255, 0.06) !important;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 10% 25%,
+            rgba(50, 180, 100, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 60%,
+            rgba(100, 200, 120, 0.20),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(30, 150, 80, 0.18),
+            transparent 40%
+        ),
+        #f5f8f5;
+
+    background-attachment: fixed;
+}
+
+body.dark {
+    background:
+        radial-gradient(
+            circle at 10% 25%,
+            rgba(40, 160, 80, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 60%,
+            rgba(80, 190, 100, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(30, 130, 70, 0.15),
+            transparent 40%
+        ),
+        #101510;
+
+    background-attachment: fixed;
+}
+
+/* ============================= */
+/* SOCIETY COLOR THEMES           */
+/* ============================= */
+
+/* ROBOTICS — RED + PURPLE */
+
+body.theme-robotics {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 60, 60, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(150, 60, 255, 0.25),
+            transparent 35%
+        ),
+        #f7f5f8;
+}
+
+
+/* CODING — LIGHT SKY BLUE */
+
+body.theme-coding {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(100, 200, 255, 0.28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(80, 170, 240, 0.22),
+            transparent 35%
+        ),
+        #f3f9fc;
+}
+
+
+/* LITERATURE — YELLOW */
+
+body.theme-literary {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 210, 60, 0.28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(255, 190, 40, 0.20),
+            transparent 35%
+        ),
+        #faf9f2;
+}
+
+
+/* PHOTOGRAPHY — GREEN */
+
+body.theme-sports {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(60, 190, 100, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(100, 210, 120, 0.20),
+            transparent 35%
+        ),
+        #f4f9f5;
+}
+
+
+/* DRAMATICS — ORANGE */
+
+body.theme-drama {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 140, 40, 0.28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(255, 100, 30, 0.20),
+            transparent 35%
+        ),
+        #faf6f1;
+}
+
+
+/* MUSIC — GREY */
+
+body.theme-music {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(130, 130, 130, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(170, 170, 170, 0.20),
+            transparent 35%
+        ),
+        #f5f5f5;
+}
+
+/* ============================= */
+/* SOCIETY THEMES — DARK MODE     */
+/* ============================= */
+
+body.dark.theme-robotics {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 60, 60, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(150, 60, 255, 0.18),
+            transparent 35%
+        ),
+        #121212;
+}
+
+body.dark.theme-coding {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(100, 200, 255, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(80, 170, 240, 0.14),
+            transparent 35%
+        ),
+        #121212;
+}
+
+body.dark.theme-literary {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 210, 60, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(255, 190, 40, 0.14),
+            transparent 35%
+        ),
+        #121212;
+}
+
+body.dark.theme-sports {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(60, 190, 100, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(100, 210, 120, 0.14),
+            transparent 35%
+        ),
+        #121212;
+}
+
+body.dark.theme-drama {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 140, 40, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(255, 100, 30, 0.14),
+            transparent 35%
+        ),
+        #121212;
+}
+
+body.dark.theme-music {
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(150, 150, 150, 0.16),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(190, 190, 190, 0.12),
+            transparent 35%
+        ),
+        #121212;
+}
+
+h1,
+h2,
+h3,
+#society-name {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+.hero-overlay p,
+.society-info p,
+.detail-box p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+}
+
+.hero-overlay h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: -0.055em;
+}
+
+.hero-overlay p {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    opacity: 0.85;
 }

@@ -328,3 +328,9 @@ if (backButton) {
     });
 
 }
+
+/* SOCIETY BACKGROUND THEME */
+
+if (societyId) {
+    document.body.classList.add("theme-" + societyId);
+}

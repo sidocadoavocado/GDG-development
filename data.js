@@ -1,22 +1,22 @@
 const societies = {
     robotics: {
-        name: "Robotics Society",
+        name: "ARES Robotics",
         category: "Technical",
         description: "Build robots, work on exciting engineering projects, and explore robotics.",
         criteria: "Basic interest in robotics and willingness to learn.",
-        roles: "Mechanical, Electronics, Programming"
+        roles: "Mechanical, Electronics, Tech, Science, Design"
     },
 
     coding: {
-        name: "Coding Club",
+        name: "Google Developer Groups",
         category: "Technical",
         description: "Learn programming, build projects, and participate in coding competitions.",
         criteria: "Interest in programming and problem solving.",
-        roles: "Web Development, App Development, Competitive Programming"
+        roles: "Development, Operations, DSA, ML"
     },
 
     drama: {
-        name: "Drama Society",
+        name: "Ashwamedh Dramatics",
         category: "Cultural",
         description: "Act, perform, and tell stories through theatre and stage performances.",
         criteria: "Interest in acting, theatre, or stage production.",
@@ -24,7 +24,7 @@ const societies = {
     },
 
     music: {
-        name: "Music Society",
+        name: "Crescendo Music",
         category: "Cultural",
         description: "Explore music, collaborate with other musicians, and perform together.",
         criteria: "Interest in music and performing.",
@@ -32,7 +32,7 @@ const societies = {
     },
 
     sports: {
-        name: "Sports Club",
+        name: "Junoon Photography",
         category: "Sports",
         description: "Participate in sporting activities, competitions, and team events.",
         criteria: "Interest in sports and regular participation.",
@@ -40,7 +40,7 @@ const societies = {
     },
 
     literary: {
-        name: "Literary Society",
+        name: "Subhasha",
         category: "Literary",
         description: "Write, discuss, and explore literature, poetry, and creative expression.",
         criteria: "Interest in writing, reading, or literature.",
