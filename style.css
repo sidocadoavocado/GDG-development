@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/cascadia-code");
+
 /* ============================= */
 /* GLOBAL                         */
 /* ============================= */
@@ -204,7 +206,7 @@ main {
     gap: 14px;
     flex-wrap: wrap;
 
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -212,80 +214,117 @@ main {
 .filter-btn {
     appearance: none;
 
-    border: 1px solid #d1d5db;
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 999px;
 
-    background: white;
-    color: #333;
+    background: rgba(255, 255, 255, 0.045);
+    color: white;
 
-    padding: 10px 20px;
+    padding: 7px 14px;
     margin: 0;
 
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    font-family: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
+    font-size: 12px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
 
     cursor: pointer;
 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.06),
+        0 2px 8px rgba(0, 0, 0, 0.06);
+
     transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        border-color 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 
 .filter-btn:hover {
-    background: #222;
+    background: rgba(255, 255, 255, 0.075);
     color: white;
-    border-color: #222;
+    border-color: rgba(255, 255, 255, 0.20);
 
-    transform: translateY(-2px) scale(1.05);
+    transform: translateY(-1px);
 
     box-shadow:
-        0 0 10px rgba(0, 0, 0, 0.15);
+        inset 0 1px 1px rgba(255, 255, 255, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
 
 /* ============================= */
-/* SOCIETY CARDS                 */
+/* DARK MODE                      */
+/* ============================= */
+
+body.dark .filter-btn {
+    background: rgba(255, 255, 255, 0.04);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark .filter-btn:hover {
+    background: rgba(255, 255, 255, 0.065);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* ============================= */
+/* SOCIETY CARD GRID              */
 /* ============================= */
 
 .society-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 28px;
-
     margin-top: 0;
 }
 
 
+/* ============================= */
+/* GLASS SOCIETY CARDS            */
+/* ============================= */
+
 .society-card {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.06);
 
+    border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 18px;
-    overflow: hidden;
 
+    overflow: hidden;
     padding: 0;
 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
     box-shadow:
-        0 4px 15px rgba(0, 0, 0, 0.1);
+        0 4px 20px rgba(0, 0, 0, 0.12);
 
     transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 
 .society-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.09);
+
+    border-color: rgba(255, 255, 255, 0.25);
 
     box-shadow:
-        0 8px 22px rgba(0, 0, 0, 0.15);
+        0 10px 30px rgba(0, 0, 0, 0.18);
 }
-
 
 /* ============================= */
 /* SOCIETY IMAGE                 */
@@ -328,11 +367,12 @@ main {
 .society-content {
     padding: 24px 28px 28px;
 
+    background: transparent;
+
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
 }
-
 
 .society-content h3 {
     margin: 0;
@@ -404,22 +444,37 @@ main {
 /* ============================= */
 
 .detail-box {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.42);
 
     padding: 30px;
 
+    border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: 15px;
 
     max-width: 800px;
 
     margin: 0 auto;
 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
     box-shadow:
-        0 3px 12px rgba(0, 0, 0, 0.1);
+        0 4px 20px rgba(0, 0, 0, 0.10);
 
     transition:
         background-color 0.3s ease,
-        color 0.3s ease;
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.detail-box:hover {
+    background: rgba(255, 255, 255, 0.50);
+
+    border-color: rgba(255, 255, 255, 0.70);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.14);
 }
 
 
@@ -625,7 +680,10 @@ body.dark {
 }
 
 
-body.dark .society-card,
+body.dark .society-card {
+    color: #f5f5f5;
+}
+
 body.dark .detail-box {
     background-color: #1e1e1e;
     color: #f5f5f5;
@@ -677,16 +735,11 @@ body.dark .hero-overlay #search:focus::placeholder {
 /* Dark mode filters */
 
 body.dark .filter-btn {
-    background-color: #1e1e1e;
     color: white;
-    border-color: #555;
 }
 
-
 body.dark .filter-btn:hover {
-    background-color: white;
-    color: #222;
-    border-color: white;
+    color: white;
 }
 
 
@@ -786,7 +839,8 @@ body.dark #empty-state p {
 
 
     .filter-btn {
-        padding: 9px 14px;
+        padding: 7px 12px;
+        font-size: 11px;
     }
 
 
@@ -1250,4 +1304,162 @@ h3,
     font-weight: 400;
     letter-spacing: -0.015em;
     opacity: 0.85;
+}
+
+body.dark .society-card {
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .society-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.22);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Glass detail card in dark mode */
+body.dark .detail-box {
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .detail-box:hover {
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.22);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.30);
+}
+
+
+/* ============================= */
+/* CATEGORY GLASS PILL            */
+/* ============================= */
+
+.society-info p:first-child {
+    display: inline-block;
+
+    margin: 12px 0 0;
+    padding: 5px 12px;
+
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 999px;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    font-family: "Cascadia Code", monospace;
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1.2;
+    white-space: nowrap;
+
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Hover */
+
+.society-card:hover .society-info p:first-child {
+    background: rgba(0, 0, 0, 0.28);
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+
+/* Dark mode */
+
+body.dark .society-info p:first-child {
+    background: rgba(0, 0, 0, 0.28);
+    border-color: rgba(255, 255, 255, 0.10);
+}
+
+body.dark .society-card:hover .society-info p:first-child {
+    background: rgba(0, 0, 0, 0.34);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+
+/* ========================================================= */
+/* FINAL FILTER PILL OVERRIDE                                */
+/* ========================================================= */
+
+.filters .filter-btn {
+    appearance: none !important;
+
+    padding: 9px 19px !important;
+    margin: 0 !important;
+
+    background: rgba(255, 255, 255, 0.07) !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+    border-radius: 999px !important;
+
+    font-family: "Cascadia Code", monospace !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+
+    text-transform: uppercase !important;
+    letter-spacing: 0.01em !important;
+    white-space: nowrap !important;
+
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.08),
+        0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+    transform: none !important;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.filters .filter-btn:hover {
+    background: rgba(255, 255, 255, 0.11) !important;
+    border-color: rgba(255, 255, 255, 0.27) !important;
+    color: white !important;
+
+    transform: translateY(-1px) !important;
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.10),
+        0 4px 12px rgba(0, 0, 0, 0.10) !important;
+}
+
+body.dark .filters .filter-btn {
+    background: rgba(255, 255, 255, 0.055) !important;
+    border-color: rgba(255, 255, 255, 0.16) !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+}
+
+body.dark .filters .filter-btn:hover {
+    background: rgba(255, 255, 255, 0.085) !important;
+    border-color: rgba(255, 255, 255, 0.22) !important;
 }
